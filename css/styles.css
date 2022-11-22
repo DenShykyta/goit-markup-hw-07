@@ -217,7 +217,7 @@ section {
 
 /* BENEFITS SECTION */
 
-.benefits-title {
+.benefits__title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -225,21 +225,21 @@ section {
 
     margin-bottom: 10px;
 }
-.benefits-list {
+.benefits__list {
     display: flex;
 }
-.benefits-item {
+.benefits__item {
     width: 270px;
 }
-.benefits-item:not(:last-child) {
+.benefits__item:not(:last-child) {
     margin-right: 30px;
 }
-.benefits-text {
+.benefits__text {
     font-weight: 400;
     line-height: 1.71;
     color:var(--secondary-text-color);
 }
-.benefit-icon {
+.benefit__icon {
     width: 270px;
     height: 120px;    
     padding: 25px 100px;
@@ -253,23 +253,23 @@ section {
     padding-top: 0;
     padding-bottom: 94px;
 }
-.services-list {
+.services-section__list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
 }
-.section-title {
+.services-section__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     margin-bottom: 50px;
 }
-.service-item {
+.services-section__item {
     position: relative;
 
 }
-.overlay-text { 
+.services-section__overlay-text { 
     position: absolute;
     bottom: 0;
     display: flex;
@@ -292,6 +292,13 @@ section {
 } */
 .team-section {
     background-color: var(--team-section-bg);
+}
+.team-section-title {
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        margin-bottom: 50px;
 }
 .team-list {
     display: flex;
@@ -350,7 +357,21 @@ section {
 }
 
 /* CLIENTS SECTION */
-.client-link {
+
+.clients-section__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.clients-section__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.clients-section__link {
     width: 170px;
     height: 92px;
     display: flex;
@@ -361,19 +382,13 @@ section {
     color: var(--icon-color);
     transition: border-color var(--animation), color var(--animation);
 }
-.client-link:hover,
-.client-link:focus {
+.clients-section__link:hover,
+.clients-section__link:focus {
     border-color: var(--link-text-color);
     color: var(--link-text-color);
 }
-.client-icon {
+.clients-section__icon {
     fill: currentColor;
-}
-.clients-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
 }
 
 /* footer */
